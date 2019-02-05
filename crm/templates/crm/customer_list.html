@@ -1,4 +1,5 @@
-﻿   {% block content %}
+﻿{% extends 'crm/base.html' %}
+{% block content %}
 
 <html>
 <head>
@@ -77,7 +78,11 @@
                 {% endfor %}
             </tbody>
         </table>
-
+        <div class="row">
+            <a href="{% url 'crm:customer_new' %}" class="row">
+                <span class="btn btn-primary">Add Customer</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
