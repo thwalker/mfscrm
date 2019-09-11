@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.urls import reverse
 
-#That push worked
+#this is starting to make sense!
 
 # Create your models here.
 class Customer(models.Model):
